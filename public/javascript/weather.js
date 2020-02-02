@@ -1,5 +1,5 @@
 //query url for pollen
-
+$(document).ready(function() {
 function callweather() {
        
     var queryURL = "https://api.waqi.info/feed/here/?token=12f820d56fa3fd40bd4af15eae5097c9875e7bc5";
@@ -19,3 +19,4 @@ function callweather() {
 }
 callweather()
 
+})
