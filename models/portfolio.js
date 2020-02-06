@@ -2,7 +2,7 @@ module.exports = function(sequelize, DataTypes) {
     var Portfolio = sequelize.define("Portfolio", {
       
       image: {
-        type: sequelize.BLOB,
+        type: DataTypes.STRING,
         allowNull: false,
       },
 
@@ -19,33 +19,35 @@ module.exports = function(sequelize, DataTypes) {
         allowNull: false,
       }
     });
-    
   
-  Portfolio.sync({force: false}).then(function(){
+  
+  Portfolio.sync().then(function(){
   Portfolio.create({
-      image: images/ThePsychicGame.png,
+      image: "/Users/yimeng/Documents/Coding/UCB Boot camp/Homeworks/Portfolio/images/ThePsychicGame.png",
       title: "The Psychic Game",
       description: "The race between you and the computer",
       link: "https://littlefish-tech.github.io/Psychic-Game/"
     },
     {
-      image: "images/ThePsychicGame.png",
+      image: "/Users/yimeng/Documents/Coding/UCB Boot camp/Homeworks/Portfolio/images/ThePsychicGame.png",
       title: "Fun Giphy",
       description: "Let's explore the magical of Giphy",
       link: "https://littlefish-tech.github.io/GifTastic/"
     },
     {
-      image: "images/ThePsychicGame.png",
+      image: "/Users/yimeng/Documents/Coding/UCB Boot camp/Homeworks/Portfolio/images/ThePsychicGame.png",
       title: "Fun Giphy",
       description: "Let's explore the magical of Giphy",
       link: "https://littlefish-tech.github.io/GifTastic/"
     },
     {
-      image: "images/ThePsychicGame.png",
+      image: "/Users/yimeng/Documents/Coding/UCB Boot camp/Homeworks/Portfolio/images/ThePsychicGame.png",
       title: "Fun Giphy",
       description: "Let's explore the magical of Giphy",
       link: "https://littlefish-tech.github.io/GifTastic/"
     }
     )
   })
+  return Portfolio;
 }
+  
