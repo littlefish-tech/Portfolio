@@ -6,7 +6,7 @@ module.exports = function(app) {
     // We set the value to an array of the models we want to include in a left outer join
     // In this case, just db.Post
     app.get("/api/portfolio", function(req, res) {
-        db.Portfolio.findAll({}).then(function(dbAuthor) {
+        db.Portfolio.findAll({}).then(function(dbPortfolio) {
           res.json(dbPortfolio);
         });
       });
