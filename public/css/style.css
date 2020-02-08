@@ -45,7 +45,10 @@
 
 .page-footer {
     background-color: #A67F78;
-} I’m 
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+} 
 .fab {
     color: black;
 }
