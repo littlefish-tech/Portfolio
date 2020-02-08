@@ -45,9 +45,9 @@
 
 .page-footer {
     background-color: #A67F78;
-    position: fixed;
+    /* position: fixed;
     bottom: 0px;
-    width: 100%;
+    width: 100%; */
 } 
 .fab {
     color: black;

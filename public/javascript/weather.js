@@ -1,4 +1,7 @@
+console.log("hello")
 //query url for pollen
+
+
 $(document).ready(function() {
 function callweather() {
        
